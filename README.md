@@ -1,16 +1,29 @@
-# React + Vite
+# Greeting Generator - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Overview
+The Greeting Generator frontend is a React app that allows users to enter their name and receive a personalized greeting.
+The frontend is responsible for:
+- Displaying the user interface
+- Capturing user input
+- Managing application state
+- Sending requests to the Flask backend API
+- Displaying the greeting response returned from the backend
 
-Currently, two official plugins are available:
+## How It Works
+The user enters their name into the input field.
+When the user clicks the generate button:
+1. React stores the name using state.
+2. React sends a POST request to the Flask backend.
+3. The backend creates a personalized greeting.
+4. React receives the response.
+5. The greeting is displayed on the page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+# Running the Frontend
+1. Clone the repository
+2. Navigate into the project:
+3. Install Dependencies:
+npm install
+4. Start the development server
+npm run dev
+5. The application will start.
+http://localhost:5173
